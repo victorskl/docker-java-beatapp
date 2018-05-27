@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-JAVA_OPTS="-Xms256m -Xmx512m -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap"
+[ -z "${JAVA_OPTS}" ] && JAVA_OPTS="-Xms256m -Xmx512m -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap"
 
 export JAVA_OPTS
 
