@@ -3,6 +3,6 @@ services:
   beat:
     image: beat:latest
     environment:
-      JAVA_OPTS: "-Xms512m -Xmx1g -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -XX:+ExitOnOutOfMemoryError -Djava.security.egd=file:/dev/urandom"
+      JAVA_OPTS: "-Xms512m -Xmx1g -XX:+ExitOnOutOfMemoryError -Djava.security.egd=file:/dev/urandom"
     volumes:
       - /dev/urandom:/dev/urandom
