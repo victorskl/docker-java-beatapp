@@ -4,7 +4,7 @@ Beat is a simple app which purpose is just to trial the dockerized Java app depl
 
 ```
 cd docker-java-beatapp
-javac Beat.java
+javac --release 8 Beat.java
 
 VTAG=$(git rev-parse --short HEAD)
 
