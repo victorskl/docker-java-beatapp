@@ -33,7 +33,7 @@ public class Beat {
 
     while (true) {
       System.out.println("beat");
-      Thread.sleep(5000);
+      Thread.sleep(1000);
     }
   }
 }
